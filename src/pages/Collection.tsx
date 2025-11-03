@@ -30,7 +30,7 @@ const Collection = () => {
       series: "Gundam Wing: Endless Waltz",
       images: [Epyon],
       description:
-        "The Gundam Epyon Sturm Und Drang is an enhanced version of the iconic close-combat Mobile Suit from Endless Waltz. Built for intense melee engagements, it features the original Epyon’s signature red armor, heat rod, and beam sword — now upgraded with the third-party Sturm Und Drang add-on. This expansion kit amplifies its design with massive wing units and additional weapon systems, giving the Epyon an even more menacing and dynamic appearance worthy of its name.",
+        "An enhanced version of the iconic close-combat Gundam Epyon, upgraded with the powerful third-party Sturm Und Drang add-on. This expansion kit equips it with massive wing units and additional weapon systems, creating an even more menacing and dynamic appearance.",
     },
     {
       name: "Wing Gundam Zero (EW)",
