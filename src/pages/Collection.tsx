@@ -14,6 +14,8 @@ import Epyon from "../assets/Images/epyon.jpg";
 import GundamWingZero from "../assets/Images/wing-zero.jpg";
 import BocataGelgoog from "../assets/Images/bocata-gelgoog.jpg";
 import CharZaku from "../assets/Images/char-zaku2.jpg";
+import MoonGundam from "../assets/Images/moon-gundam.jpg";
+import Schwarzette from "../assets/Images/schwarzette.jpg";
 import { useEffect, useState } from "react";
 
 const Collection = () => {
@@ -53,6 +55,22 @@ const Collection = () => {
       images: [CharZaku],
       description:
         "A high-mobility custom Zaku II used by Char Aznable, the Red Comet himself. This revived HG kit features updated proportions and articulation while maintaining the classic red color scheme. Known for its speed and precision in battle, it remains one of the most iconic Mobile Suits in the Universal Century.",
+    },
+    {
+      name: "AMS-123X-X Moon Gundam",
+      grade: "HG 1/144",
+      series: "Mobile Suit: Moon Gundam",
+      images: [MoonGundam],
+      description:
+        "The Moon Gundam is a heavily armed prototype designed for orbital combat. Featuring a variety of beam weapons and high-speed thrusters, this kit showcases a balance between firepower and mobility, perfect for creating dynamic poses and display-worthy details.",
+    },
+    {
+      name: "Gundam Schwarzette",
+      grade: "HG 1/144",
+      series: "Mobile Suit Gundam: The Witch from Mercury",
+      images: [Schwarzette],
+      description:
+        "The Gundam Schwarzette is a sleek, modern Mobile Suit from 'The Witch from Mercury' series. Known for its elegant black-and-silver design, sharp articulation, and impressive transformation capabilities, this model emphasizes both aesthetic appeal and versatile posing options for display.",
     },
   ];
 
@@ -118,7 +136,7 @@ const Collection = () => {
                           />
                         </div>
                       </div>
-                      
+
                       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
                         <h3 className="text-xl sm:text-2xl md:text-4xl font-orbitron font-bold text-foreground">
                           {gundam.name}
