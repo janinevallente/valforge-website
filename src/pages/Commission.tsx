@@ -131,7 +131,7 @@ const Commission = () => {
           >
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-4">
-                Ready to Start Your Commission?
+                Ready to Start your Commission?
               </h2>
               <p className="text-xl text-muted-foreground font-rajdhani mb-8 max-w-2xl mx-auto">
                 Let’s turn your Gunpla vision into reality, built with passion, precision, and attention to every detail.
