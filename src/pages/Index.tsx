@@ -13,14 +13,6 @@ const Index = () => {
   useEffect(() => {
     const handleSectionAnimation = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
-        // if (entry.isIntersecting) {
-        //   // Add animation class when section comes into view
-        //   entry.target.classList.add('animate-fade-in-up');
-        // } else {
-        //   // Remove animation class when section leaves view
-        //   // This allows the animation to trigger again when scrolled back to
-        //   entry.target.classList.remove('animate-fade-in-up');
-        // }
         if (entry.isIntersecting) {
           if (entry.target.id === 'home') {
             // For home section, animate the hero content only

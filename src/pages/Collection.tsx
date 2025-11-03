@@ -73,7 +73,6 @@ const Collection = () => {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
 
         <div className="container mx-auto max-w-7xl relative z-10">
-          {/* Header */}
           <div className="text-center mb-16 animate-fade-in-up">
             <Badge variant="outline" className="mb-4 border-primary text-primary">
               MOBILE SUIT COLLECTION
@@ -86,7 +85,6 @@ const Collection = () => {
             </p>
           </div>
 
-          {/* Carousel */}
           <Carousel
             setApi={setApi}
             opts={{
@@ -111,7 +109,6 @@ const Collection = () => {
                     }`}
                   >
                     <div className="flex flex-col lg:flex-row items-center gap-10 p-4 sm:p-6 transition-all duration-700 ease-in-out">
-                      {/* Image */}
                       <div className="w-full lg:w-1/2 flex justify-center">
                         <div className="relative overflow-hidden rounded-lg aspect-[4/3] sm:aspect-square md:aspect-[5/4]">
                           <img
@@ -121,8 +118,7 @@ const Collection = () => {
                           />
                         </div>
                       </div>
-
-                      {/* Description */}
+                      
                       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
                         <h3 className="text-xl sm:text-2xl md:text-4xl font-orbitron font-bold text-foreground">
                           {gundam.name}

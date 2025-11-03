@@ -19,7 +19,6 @@ const About = () => {
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16"
             style={{ animationDelay: "0.1s" }}>
-            {/* Image */}
             <div
               className="w-full lg:w-1/2 flex justify-center lg:justify-end animate-fade-in-up">
               <img
@@ -28,8 +27,6 @@ const About = () => {
                 className="rounded-lg shadow-lg w-full max-w-sm sm:max-w-md object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-
-            {/* Text */}
             <div className="w-full lg:w-1/2 space-y-5 sm:space-y-6 text-center lg:text-left px-2 sm:px-0 animate-fade-in-up">
               <p className="font-rajdhani text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Hi, I’m <span className="text-primary font-semibold">J9</span>, a Gunpla enthusiast and builder from the{" "}

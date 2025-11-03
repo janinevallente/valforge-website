@@ -32,22 +32,15 @@ const Hero = () => {
       {/* Content */}
       <div className="hero-content relative z-20 container mx-auto px-4 text-center mt-20 md:mt-10">
         <div className="animate-fade-in-up">
-          {/* Japanese Subtitle */}
           <p className="text-primary font-rajdhani text-sm md:text-base tracking-widest mb-4 animate-glow-pulse">
             機動戦士ガンダム
           </p>
-          
-          {/* Main Title */}
           <h1 className="font-orbitron font-black text-4xl md:text-7xl lg:text-8xl mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
             VALFORGE
           </h1>
-          
-          {/* Subtitle */}
           <h2 className="font-rajdhani text-2xl md:text-3xl lg:text-4xl font-light text-muted-foreground mb-8 tracking-wide">
             PRECISION GUNPLA CRAFTSMANSHIP
           </h2>
-
-          {/* Description */}
           <p className="max-w-2xl mx-auto text-base md:text-lg text-muted-foreground mb-12 font-rajdhani">
             Explore my Gundam collection and gunpla commission services. 
             Specializing in straight builds and waterslide decals for that authentic, premium finish.
@@ -55,7 +48,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator - Moved outside hero-content */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 md:bottom-20 left-1/2 transform -translate-x-1/2 z-20">
         <div className="flex flex-col items-center gap-2 text-muted-foreground">
           <span className="font-rajdhani text-sm uppercase tracking-widest">Explore More</span>
