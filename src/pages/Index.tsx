@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Collection from "./Collection";
 import Commission from "./Commission";
+import Footer from "@/components/ui/Footer";
 
 const Index = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -69,6 +70,7 @@ const Index = () => {
       <section id="commission" ref={commissionRef}>
         <Commission />
       </section>
+      <Footer />
     </main>
   );
 };
