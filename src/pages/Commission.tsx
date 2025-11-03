@@ -125,7 +125,10 @@ const Commission = () => {
             </div>
           </div>
 
-          <Card className="border-primary/50 bg-gradient-to-br from-primary/5 to-transparent">
+          <Card 
+            id="contact-details"
+            className="border-primary/50 bg-gradient-to-br from-primary/5 to-transparent"
+          >
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-4">
                 Ready to Start Your Commission?

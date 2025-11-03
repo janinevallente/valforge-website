@@ -135,7 +135,7 @@ const Navigation = () => {
                   ? "bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)]" 
                   : "bg-primary hover:bg-primary/90 shadow-[0_0_20px_hsl(var(--primary)/0.4)]"
               } text-primary-foreground transition-all duration-300`}
-              onClick={(e) => handleNavClick('#commission', e)}
+              onClick={(e) => handleNavClick('#contact-details', e)}
             >
               CONTACT ME
             </Button>
@@ -169,7 +169,9 @@ const Navigation = () => {
                 style={{
                   transitionDelay: `${menuOpen ? index * 50 : 0}ms`,
                 }}
-                onClick={(e) => handleNavClick(item.href, e)}
+                onClick={(e) =>
+                  handleNavClick(item.href === '#commission' ? '#contact-details' : item.href, e)
+                }
               >
                 {item.label}
               </a>
