@@ -11,7 +11,7 @@ const Commission = () => {
       description: "Clean assembly of your gunpla kit with precision and care",
       price: "Starting at $50",
       features: [
-        "Nub removal",
+        "Nub mark removal",
         "Panel line accent",
         "Basic color correction",
         "Quality inspection",
