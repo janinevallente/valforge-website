@@ -23,7 +23,7 @@ const Commission = () => {
       price: "Starting at $80",
       features: [
         "Everything in Straight Build",
-        "Premium waterslide decals",
+        "High quality waterslide decals",
         "Mark Softer solution",
         "Top coat protection",
       ],
@@ -50,18 +50,16 @@ const Commission = () => {
     {
       step: "04",
       title: "Delivery",
-      description: "Carefully packaged and shipped to you",
+      description: "Carefully packaged and delivered to you",
     },
   ];
 
   return (
     <main className="min-h-screen bg-background">
       <section id="commission" className="relative pt-32 pb-20 px-4">
-        {/* Grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
         
         <div className="container mx-auto max-w-7xl relative z-10">
-          {/* Header */}
           <div className="text-center mb-20 animate-fade-in-up">
             <Badge variant="outline" className="mb-4 border-primary text-primary">
               GUNPLA SERVICES
@@ -74,7 +72,6 @@ const Commission = () => {
             </p>
           </div>
 
-          {/* Services */}
           <div className="grid md:grid-cols-2 gap-8 mb-20">
             {services.map((service, index) => (
               <Card 
@@ -106,7 +103,6 @@ const Commission = () => {
             ))}
           </div>
 
-          {/* Process */}
           <div className="mb-20">
             <h2 className="text-4xl font-orbitron font-bold text-center mb-12">
               THE PROCESS
@@ -129,7 +125,6 @@ const Commission = () => {
             </div>
           </div>
 
-          {/* CTA */}
           <Card className="border-primary/50 bg-gradient-to-br from-primary/5 to-transparent">
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-4">
