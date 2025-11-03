@@ -68,9 +68,7 @@ const Collection = () => {
 
   return (
     <main className="min-h-screen bg-background">
-      <Navigation />
-
-      <section className="relative pt-32 pb-20 px-4">
+      <section id="collection" className="relative pt-32 pb-20 px-4">
         {/* Subtle grid overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
 

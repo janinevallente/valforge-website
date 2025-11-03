@@ -4,7 +4,7 @@ import heroImage from "@/assets/Images/gundam-hero.webp"
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-0 w-full h-px bg-gradient-to-r from-transparent via-secondary to-transparent animate-glow-pulse z-10" style={{ animationDelay: '1s' }}></div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-4 text-center mt-20 md:mt-10">
+      <div className="hero-content relative z-20 container mx-auto px-4 text-center mt-20 md:mt-10">
         <div className="animate-fade-in-up">
           {/* Japanese Subtitle */}
           <p className="text-primary font-rajdhani text-sm md:text-base tracking-widest mb-4 animate-glow-pulse">
@@ -38,13 +38,13 @@ const Hero = () => {
           </p>
           
           {/* Main Title */}
-          <h1 className="font-orbitron font-black text-5xl md:text-7xl lg:text-8xl mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+          <h1 className="font-orbitron font-black text-4xl md:text-7xl lg:text-8xl mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
             VALFORGE
           </h1>
           
           {/* Subtitle */}
           <h2 className="font-rajdhani text-2xl md:text-3xl lg:text-4xl font-light text-muted-foreground mb-8 tracking-wide">
-            MOBILE SUIT COLLECTION
+            PRECISION GUNPLA CRAFTSMANSHIP
           </h2>
 
           {/* Description */}
@@ -52,31 +52,15 @@ const Hero = () => {
             Explore my Gundam collection and gunpla commission services. 
             Specializing in straight builds and waterslide decals for that authentic, premium finish.
           </p>
+        </div>
+      </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="group relative font-orbitron font-bold text-base md:text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_30px_hsl(var(--primary)/0.5)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.8)] transition-all duration-300"
-              asChild
-            >
-              <Link to="/collection">
-                VIEW COLLECTION
-              </Link>
-            </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="group relative font-orbitron font-bold text-base md:text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.6)] transition-all duration-300"
-              asChild
-            >
-              <Link to="/commission">
-                COMMISSION WORK
-              </Link>
-            </Button>
-          </div>
-          <div className="mt-16 flex flex-wrap justify-center gap-8 text-left">
+      {/* Scroll Indicator - Moved outside hero-content */}
+      <div className="absolute bottom-8 md:bottom-20 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="flex flex-col items-center gap-2 text-muted-foreground">
+          <span className="font-rajdhani text-sm uppercase tracking-widest">Explore More</span>
+          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-primary/70 rounded-full mt-2 animate-bounce"></div>
           </div>
         </div>
       </div>

@@ -5,9 +5,7 @@ import AboutMe from "../assets/Images/about-me.webp";
 const About = () => {
   return (
     <main className="min-h-screen bg-background">
-      <Navigation />
-
-      <section className="relative pt-32 pb-20 px-4">
+      <section id="about" className="relative pt-32 pb-20 px-4">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
