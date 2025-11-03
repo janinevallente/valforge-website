@@ -4,56 +4,58 @@ import Hero from "./Hero";
 import About from "./About";
 import Collection from "./Collection";
 import Commission from "./Commission";
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const collectionRef = useRef<HTMLDivElement>(null);
   const commissionRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+    useEffect(() => {
     const handleSectionAnimation = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
+        entries.forEach((entry) => {
+        const isDesktop = window.innerWidth >= 768; // Tailwind md breakpoint
+        if (!isDesktop) return; // skip animation on small screens
+
         if (entry.isIntersecting) {
-          if (entry.target.id === 'home') {
-            // For home section, animate the hero content only
+            if (entry.target.id === 'home') {
             const heroContent = entry.target.querySelector('.hero-content');
             if (heroContent) {
-              heroContent.classList.remove('animate-fade-in-up');
-              heroContent.classList.add('animate-fade-in-up');
+                heroContent.classList.remove('animate-fade-in-up');
+                setTimeout(() => {
+                heroContent.classList.add('animate-fade-in-up');
+                }, 10);
             }
-          } else {
-            // For other sections, animate the entire section
+            } else {
             entry.target.classList.add('animate-fade-in-up');
-          }
+            }
         } else {
-          // Remove animation class when section leaves view
-          if (entry.target.id !== 'home') {
+            if (entry.target.id !== 'home') {
             entry.target.classList.remove('animate-fade-in-up');
-          }
+            }
         }
-      });
+        });
     };
 
     const observerOptions = {
-      root: null,
-      rootMargin: '-10% 0px -10% 0px',
-      threshold: 0
+        root: null,
+        rootMargin: '-10% 0px -10% 0px',
+        threshold: 0
     };
 
     const observer = new IntersectionObserver(handleSectionAnimation, observerOptions);
 
     const sections = [aboutRef.current, collectionRef.current, commissionRef.current];
     sections.forEach(section => {
-      if (section) observer.observe(section);
+        if (section) observer.observe(section);
     });
 
     return () => {
-      sections.forEach(section => {
+        sections.forEach(section => {
         if (section) observer.unobserve(section);
-      });
+        });
     };
-  }, []);
+    }, []);
 
   return (
     <main className="min-h-screen bg-background">

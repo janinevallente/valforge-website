@@ -170,7 +170,7 @@ const Navigation = () => {
                   transitionDelay: `${menuOpen ? index * 50 : 0}ms`,
                 }}
                 onClick={(e) =>
-                  handleNavClick(item.href === '#commission' ? '#contact-details' : item.href, e)
+                  handleNavClick(item.href === '#contact-details' ? '#contact-details' : item.href, e)
                 }
               >
                 {item.label}
