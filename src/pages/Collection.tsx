@@ -10,12 +10,12 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import Epyon from "../assets/Images/epyon.jpg";
-import GundamWingZero from "../assets/Images/wing-zero.jpg";
-import BocataGelgoog from "../assets/Images/bocata-gelgoog.jpg";
-import CharZaku from "../assets/Images/char-zaku2.jpg";
-import MoonGundam from "../assets/Images/moon-gundam.jpg";
-import Schwarzette from "../assets/Images/schwarzette.jpg";
+import Epyon from "../assets/Images/epyon.webp";
+import GundamWingZero from "../assets/Images/wing-zero.webp";
+import BocataGelgoog from "../assets/Images/bocata-gelgoog.webp";
+import CharZaku from "../assets/Images/char-zaku2.webp";
+import MoonGundam from "../assets/Images/moon-gundam.webp";
+import Schwarzette from "../assets/Images/schwarzette.webp";
 import { useEffect, useState } from "react";
 
 const Collection = () => {
