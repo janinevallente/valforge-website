@@ -1,9 +1,5 @@
 # Welcome to Valforge Website
 
-## Project info
-
-**URL**: https://valforge.vercel.app
-
 ## How to Edit This Project
 
 You can work on your website using several approaches:
