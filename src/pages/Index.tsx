@@ -11,67 +11,67 @@ const Index = () => {
   const collectionRef = useRef<HTMLDivElement>(null);
   const commissionRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
+  useEffect(() => {
     const handleSectionAnimation = (entries: IntersectionObserverEntry[]) => {
-        entries.forEach((entry) => {
-        const isDesktop = window.innerWidth >= 768; // Tailwind md breakpoint
-        if (!isDesktop) return; // skip animation on small screens
+      entries.forEach((entry) => {
+        const isDesktop = window.innerWidth >= 768;
+        if (!isDesktop) return;
 
+        const targets = entry.target.querySelectorAll(".section-enter");
         if (entry.isIntersecting) {
-            if (entry.target.id === 'home') {
-            const heroContent = entry.target.querySelector('.hero-content');
-            if (heroContent) {
-                heroContent.classList.remove('animate-fade-in-up');
-                setTimeout(() => {
-                heroContent.classList.add('animate-fade-in-up');
-                }, 10);
-            }
-            } else {
-            entry.target.classList.add('animate-fade-in-up');
-            }
+          targets.forEach((el, i) => {
+            const elem = el as HTMLElement;
+            elem.style.transitionDelay = `${i * 80}ms`;
+            elem.classList.add("section-visible");
+            elem.classList.remove("section-enter");
+          });
         } else {
-            if (entry.target.id !== 'home') {
-            entry.target.classList.remove('animate-fade-in-up');
-            }
+          targets.forEach((el) => {
+            const elem = el as HTMLElement;
+            elem.style.transitionDelay = "0ms";
+            elem.classList.remove("section-visible");
+            elem.classList.add("section-enter");
+          });
         }
-        });
+      });
     };
 
     const observerOptions = {
-        root: null,
-        rootMargin: '-10% 0px -10% 0px',
-        threshold: 0
+      root: null,
+      rootMargin: "-5% 0px -10% 0px",
+      threshold: 0.05,
     };
 
     const observer = new IntersectionObserver(handleSectionAnimation, observerOptions);
 
     const sections = [aboutRef.current, collectionRef.current, commissionRef.current];
-    sections.forEach(section => {
-        if (section) observer.observe(section);
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
     });
 
     return () => {
-        sections.forEach(section => {
+      sections.forEach((section) => {
         if (section) observer.unobserve(section);
-        });
+      });
     };
-    }, []);
+  }, []);
 
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-      <section id="home">
+      {/* pt-[60px] = ticker (28px) + nav (48px) approx, handled in hero via pt */}
+      <div id="home">
         <Hero />
-      </section>
-      <section id="about" ref={aboutRef}>
+      </div>
+      <div id="about" ref={aboutRef}>
         <About />
-      </section>
-      <section id="collection" ref={collectionRef}>
+      </div>
+      <div id="collection" ref={collectionRef}>
         <Collection />
-      </section>
-      <section id="commission" ref={commissionRef}>
+      </div>
+      <div id="commission" ref={commissionRef}>
         <Commission />
-      </section>
+      </div>
       <Footer />
     </main>
   );
