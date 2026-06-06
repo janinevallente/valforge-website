@@ -45,20 +45,16 @@ const Commission = () => {
       {/* Diagonal stripe accent top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto relative z-10">
 
         {/* Header */}
-        <div className="mb-20 section-enter">
+        <div className="mb-10 md:mb-16 section-enter">
           <div className="section-tag mb-4">GUNPLA SERVICES</div>
-          <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-10">
-            <h2 className="font-teko font-bold text-6xl md:text-8xl tracking-[0.05em] text-white leading-none">
-              COMMISSION
-              <br />
-              <span className="text-primary">WORK</span>
+          <div className="flex items-end gap-6">
+            <h2 className="font-teko font-bold text-4xl sm:text-6xl md:text-8xl tracking-[0.05em] text-white leading-none">
+              COMMISSION <span className="text-primary">WORK</span>
             </h2>
-            <p className="md:mb-5 font-exo text-base text-foreground/40 max-w-xs">
-              Professional Gunpla building services with meticulous attention to detail
-            </p>
+            <div className="hidden md:block mb-3 w-32 h-px bg-gradient-to-r from-primary/50 to-transparent" />
           </div>
         </div>
 

@@ -9,14 +9,13 @@ const About = () => {
       {/* Left vertical accent */}
       <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-transparent via-primary/40 to-transparent" />
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto relative z-10">
         {/* Section header */}
-        <div className="mb-16 section-enter">
+        <div className="mb-10 md:mb-16 section-enter">
           <div className="section-tag mb-4">PILOT PROFILE</div>
           <div className="flex items-end gap-6">
-            <h2 className="font-teko font-bold text-6xl md:text-8xl tracking-[0.05em] text-white leading-none">
-              MEET THE<br />
-              <span className="text-primary">BUILDER</span>
+            <h2 className="font-teko font-bold text-4xl sm:text-6xl md:text-8xl tracking-[0.05em] text-white leading-none">
+              MEET THE <span className="text-primary">BUILDER</span>
             </h2>
             <div className="hidden md:block mb-3 w-32 h-px bg-gradient-to-r from-primary/50 to-transparent" />
           </div>
@@ -42,13 +41,6 @@ const About = () => {
                 className="w-full object-cover grayscale contrast-110 brightness-90 transition-all duration-500 hover:grayscale-0"
                 style={{ clipPath: "polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%)" }}
               />
-
-              {/* Overlay label */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[hsl(220_15%_5%/0.9)] to-transparent p-4">
-                <div className="font-mono-tech text-[10px] text-primary/70 tracking-widest">
-                  PILOT ID: J9 · CEBU CITY, PH
-                </div>
-              </div>
             </div>
           </div>
 

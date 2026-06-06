@@ -89,7 +89,7 @@ const Hero = () => {
               {[
                 { label: "SPECIALTY", value: "STRAIGHT BUILDS" },
                 { label: "FINISH", value: "WATERSLIDE DECALS" },
-                { label: "COMMUNITY", value: "GUNPLA CEBU" },
+                { label: "COMMUNITY", value: "GUNPLA CEBU COMMUNITY" },
               ].map((spec) => (
                 <div key={spec.label} className="flex flex-col gap-1">
                   <span className="font-mono-tech text-[9px] text-primary/50 tracking-[0.25em]">
